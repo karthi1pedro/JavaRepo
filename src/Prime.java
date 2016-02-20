@@ -1,11 +1,10 @@
 public class Prime{
   public static void main(String[] args) {
-
-    System.out.println("This num is "+isPrime(-22));
-    System.out.println("This num is "+isPrime(0));
-    System.out.println("This num is "+isPrime(1));
-    System.out.println("This num is "+isPrime(3));
-    System.out.println("This num is "+isPrime(37));
+    for(int i=0;i<1000;i++)
+    {
+      int t = (int)(Math.random()*10000);
+      System.out.println("The num "+t+" is "+isPrime(t));
+    }
   }
   public static String isPrime(int num){
     if (num<0) {
